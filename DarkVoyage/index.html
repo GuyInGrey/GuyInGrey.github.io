@@ -12,7 +12,7 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Web.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body onload="const delay = ms => new Promise(res => setTimeout(res, ms)); delay(3000); unityInstance.SetFullscreen(1);">
+  <body onload="const delay = ms => new Promise(res => setTimeout(res, ms)); await delay(4000); unityInstance.SetFullscreen(1);">
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
